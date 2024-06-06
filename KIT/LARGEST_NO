@@ -1,0 +1,41 @@
+=== LARGEST NUMBER
+
+        A8000 (ENTER)
+        
+        MOV      SI, 8500
+        MOV      CX, 05
+        DEC      CX
+
+        MOV      AL, [SI]
+
+8008    INC      SI
+        CMP      AL, [SI]
+        JC      8030
+        LOOP     8008
+        MOV      SI, 8600
+        MOV      [SI], AL
+        HLT
+        (ENTER)
+        (ENTER)
+
+        A8030 (ENTER)
+        XCHG     AL, [SI]
+        LOOP     8008
+        MOV      SI, 8600
+        MOV      [SI], AL
+        HLT
+        (ENTER)
+        (ENTER)
+
+        M8500
+        10 (SPACE) 20 (SPACE) 40 (SPACE) 50 (SPACE) 30 (SPACE)
+        (ENTER)
+        (ENTER)
+
+        G8000 (ENTER)
+        (PRESS RESET)
+
+M8600
+(ENTER)
+
+

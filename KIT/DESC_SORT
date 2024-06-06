@@ -1,0 +1,39 @@
+=== SORTING DESCENDING ORDER
+
+A8000 (ENTER)
+
+        MOV     BX, 04
+
+8003    MOV     S1, 8100
+        MOV     CX, 04
+
+8009    MOV     AL, [SI]
+        INC     SI
+        CMP     AL, SI
+        JC      8030
+        LOOP    8009
+        (ENTER)
+        (ENTER)
+
+A8030 (ENTER)
+        XCHG    AL, [SI]
+        DEC     SI
+        MOV     [SI], AL
+        LOOP    8009
+        DEC     BX
+        JNZ     8003
+        HLT
+        (ENTER)
+        (ENTER)
+
+M8100 (ENTER)
+        10 (SPACE) 20 (SPACE) 40 (SPACE) 50 (SPACE) 30 (SPACE)
+        (ENTER)
+        (ENTER)
+
+        G8000 (ENTER)
+        (PRESS RESET)
+
+M8100
+(ENTER)
+

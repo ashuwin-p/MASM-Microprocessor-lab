@@ -12,8 +12,7 @@
         CMP      AL, [SI]
         JNC      8030
         LOOP     8008
-        MOV      SI, 8600
-        MOV      [SI], AL
+        MOV      8600, AL
         HLT
         (ENTER)
         (ENTER)
@@ -21,8 +20,7 @@
         A8030 (ENTER)
         XCHG     AL, [SI]
         LOOP     8008
-        MOV      SI, 8600
-        MOV      [SI], AL
+        MOV      8600, AL
         HLT
         (ENTER)
         (ENTER)

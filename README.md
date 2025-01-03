@@ -11,7 +11,7 @@ This repository contains a collection of programs and scripts related to assembl
 
 ### **Directories**
 1. - **`min_max.asm`**: Assembly program to find the minimum and maximum numbers in an array.
-   - 
+   
 2. **📁 [16_BIT_ARITHMETIC_OPERATIONS](16_BIT_ARITHMETIC_OPERATIONS)**  
    Assembly programs for 16-bit arithmetic operations:  
    - **`ADD.asm`**: Adds two 16-bit numbers.  
